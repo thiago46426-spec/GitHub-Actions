@@ -18,7 +18,7 @@ jobs:
 
       - name: Verificar atualização
         run: |
-          if grep -q "Última atualização" index.html; then
+          if grep -qi "Última atualização" index.html; then
             echo "✓ A página possui a informação de atualização."
             echo "✓ Pull Request validado com sucesso!"
           else
